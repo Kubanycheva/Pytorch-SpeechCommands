@@ -86,4 +86,4 @@ async def predict_audio(file: UploadFile = File(..., )):
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == '__main__':
-    uvicorn.run(check_audio, host='127.0.0.1', port=9000)
+    uvicorn.run(check_audio, host='127.0.0.1', port=8000)
